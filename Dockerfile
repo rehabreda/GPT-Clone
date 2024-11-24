@@ -21,4 +21,4 @@ EXPOSE 8501
 
 
 # Run app.py when the container launches
-CMD ["streamlit", "run", "Chatbot.py"]
+CMD ["streamlit", "run", "Chatbot.py", "--server.port", "8501"]
