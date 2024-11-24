@@ -40,7 +40,7 @@ jobs:
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
-          task-definition: chatbot-app-task-definition.json 
+          task-definition: chatbot-app-task-difinition.json
           container-name: chatbot-app
           image: ${{ steps.build-image.outputs.image }}    
       - name: Deploy Amazon ECS task definition
