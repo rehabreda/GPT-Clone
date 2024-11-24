@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:430118817116:task-definition/chatbot-app-task-difinition:1",
+    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:430118817116:task-definition/chatbot-app-task-difinition1:1",
     "containerDefinitions": [
         {
             "name": "chatbot-app",
@@ -7,7 +7,7 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "chatbot-8501-tcp",
+                    "name": "chatbot-app-8501-tcp",
                     "containerPort": 8501,
                     "hostPort": 8501,
                     "protocol": "tcp",
@@ -23,7 +23,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/chatbot-app-task-difinition",
+                    "awslogs-group": "/ecs/chatbot-app-task-difinition1",
                     "mode": "non-blocking",
                     "awslogs-create-group": "true",
                     "max-buffer-size": "25m",
@@ -35,7 +35,7 @@
             "systemControls": []
         }
     ],
-    "family": "chatbot-app-task-difinition",
+    "family": "chatbot-app-task-difinition1",
     "taskRoleArn": "arn:aws:iam::430118817116:role/ECSTaskExcutionRole",
     "executionRoleArn": "arn:aws:iam::430118817116:role/ECSTaskExcutionRole",
     "networkMode": "awsvpc",
@@ -88,7 +88,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-11-24T19:35:36.212Z",
+    "registeredAt": "2024-11-24T21:22:02.857Z",
     "registeredBy": "arn:aws:iam::430118817116:root",
     "tags": []
 }
