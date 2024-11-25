@@ -3,12 +3,8 @@ import os
 from openai import OpenAI
 
 
-rom dotenv import load_dotenv
-
 # Load environment variables from the .env file in the parent directory
-env_path = os.path.join(".", ".env")
 
-load_dotenv(env_path)
 openai_api_key=os.getenv("OPENAI_API_KEY")
 print("key",openai_api_key)
 # Create an OpenAI client instance using the API key from the .env file
