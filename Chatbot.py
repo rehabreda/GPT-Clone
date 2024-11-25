@@ -4,7 +4,8 @@ from openai import OpenAI
 
 
 
-openai_api_key=os.getenv("OPENAI_API_KEY")
+openai_api_key= os.environ['OPENAI_API_KEY']
+print("key",openai_api_key)
 # Create an OpenAI client instance using the API key from the .env file
 
 
