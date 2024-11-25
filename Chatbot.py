@@ -1,17 +1,13 @@
 import streamlit as st
 import os
 from openai import OpenAI
-from dotenv import load_dotenv
 
-# Load environment variables from the .env file in the parent directory
-env_path = os.path.join(".", ".env")
 
-load_dotenv(env_path)
+
 openai_api_key=os.getenv("OPENAI_API_KEY")
 # Create an OpenAI client instance using the API key from the .env file
 
-from openai import OpenAI
-import streamlit as st
+
 
 with st.sidebar:
     # openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
