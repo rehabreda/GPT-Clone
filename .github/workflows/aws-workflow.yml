@@ -1,8 +1,4 @@
 name: AWS CICD
-env:
-  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
-  
 
 on:
   push:
@@ -31,6 +27,7 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           IMAGE_TAG: ${{ github.sha }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           REPOSITORY: chatbot-app
         run: |
           # Build a docker container and
