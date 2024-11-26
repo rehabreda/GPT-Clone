@@ -102,11 +102,6 @@ Configure the following secrets in your GitHub repository settings:
 4. Push to the branch
 5. Create a Pull Request
 
-## License
-[Specify your license here, e.g., MIT License]
-
-## Disclaimer
-This project is a demonstration and should not be used for production without proper security reviews and enhancements.
 
 ## Contact
 [ Linkedin](https://www.linkedin.com/in/rehabreda8/) 
