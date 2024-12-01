@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:430118817116:task-definition/chatbot-app-task-difinition1:1",
+    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:430118817116:task-definition/chatbot-app-task-difinition:3",
     "containerDefinitions": [
         {
             "name": "chatbot-app",
@@ -23,7 +23,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/chatbot-app-task-difinition1",
+                    "awslogs-group": "/ecs/chatbot-app-task-difinition",
                     "mode": "non-blocking",
                     "awslogs-create-group": "true",
                     "max-buffer-size": "25m",
@@ -35,11 +35,11 @@
             "systemControls": []
         }
     ],
-    "family": "chatbot-app-task-difinition1",
+    "family": "chatbot-app-task-difinition",
     "taskRoleArn": "arn:aws:iam::430118817116:role/ECSTaskExcutionRole",
     "executionRoleArn": "arn:aws:iam::430118817116:role/ECSTaskExcutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -88,7 +88,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-11-24T21:22:02.857Z",
+    "registeredAt": "2024-12-01T18:20:35.867Z",
     "registeredBy": "arn:aws:iam::430118817116:root",
     "tags": []
 }
